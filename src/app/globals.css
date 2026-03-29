@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
+@theme {
+  --color-abyss: #0a0a09;
+  --color-abyss-light: #161614;
+  --color-champagne: #d9d0c3;
+  --color-gold: #c3a370;
+  --color-gold-hover: #e0b976;
+  --color-stone: #8e918f;
+
+  --font-serif: "Zen Maru Gothic", serif;
+  --font-sans: "Outfit", sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a09;
+  --foreground: #d9d0c3;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hardcoded utilities to bypass stale Tailwind cache */
+.bg-abyss { background-color: #0a0a09; }
+.text-champagne { color: #d9d0c3; }
+.bg-abyss-light { background-color: #161614; }
+.text-gold { color: #c3a370; }
+.bg-gold { background-color: #c3a370; }
+.border-gold { border-color: #c3a370; }
+.border-gold\/50 { border-color: rgba(195,163,112,0.5); }
+.border-gold\/40 { border-color: rgba(195,163,112,0.4); }
+.border-gold\/10 { border-color: rgba(195,163,112,0.1); }
+.text-stone { color: #8e918f; }
+
+::selection {
+  background: #c3a370;
+  color: #0a0a09;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }
