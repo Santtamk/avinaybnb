@@ -26,23 +26,44 @@ body {
 }
 
 /* Hardcoded utilities to bypass stale Tailwind cache */
-.bg-abyss { background-color: #0a0a09; }
-.text-champagne { color: #d9d0c3; }
-.bg-abyss-light { background-color: #161614; }
-.text-gold { color: #c3a370; }
-.bg-gold { background-color: #c3a370; }
-.border-gold { border-color: #c3a370; }
-.border-gold\/50 { border-color: rgba(195,163,112,0.5); }
-.border-gold\/40 { border-color: rgba(195,163,112,0.4); }
-.border-gold\/10 { border-color: rgba(195,163,112,0.1); }
-.text-stone { color: #8e918f; }
+.bg-abyss {
+  background-color: #0a0a09;
+}
+.text-champagne {
+  color: #d9d0c3;
+}
+.bg-abyss-light {
+  background-color: #161614;
+}
+.text-gold {
+  color: #c3a370;
+}
+.bg-gold {
+  background-color: #c3a370;
+}
+.border-gold {
+  border-color: #c3a370;
+}
+.border-gold\/50 {
+  border-color: rgba(195, 163, 112, 0.5);
+}
+.border-gold\/40 {
+  border-color: rgba(195, 163, 112, 0.4);
+}
+.border-gold\/10 {
+  border-color: rgba(195, 163, 112, 0.1);
+}
+.text-stone {
+  color: #8e918f;
+}
 
 ::selection {
   background: #c3a370;
   color: #0a0a09;
 }
 
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 

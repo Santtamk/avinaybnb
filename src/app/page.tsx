@@ -14,11 +14,17 @@ export default function Home() {
       </div>
 
       <ReviewMarquee />
-      
+
       <footer className="w-full bg-abyss-light text-champagne py-24 px-6 flex flex-col items-center justify-center text-center">
-        <span className="text-gold tracking-[0.4em] text-xs uppercase mb-4 block font-sans">Reach Out</span>
+        <span className="text-gold tracking-[0.4em] text-xs uppercase mb-4 block font-sans">
+          Reach Out
+        </span>
         <h2 className="font-serif text-5xl md:text-[6vw] leading-none mb-12 uppercase tracking-tighter hover:text-gold transition-colors duration-500 cursor-pointer">
-          <a href="https://wa.me/918617586316" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://wa.me/918617586316"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Reserve Your Stay
           </a>
         </h2>
