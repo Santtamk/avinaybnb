@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between w-full bg-abyss">
       <HeroSection />
-      
-      <ReviewMarquee />
 
       <div className="relative w-full z-10 bg-abyss border-t border-gold/10">
         <StaggeredGallery />
         <PortfolioGrid />
       </div>
+
+      <ReviewMarquee />
       
       <footer className="w-full bg-abyss-light text-champagne py-24 px-6 flex flex-col items-center justify-center text-center">
         <span className="text-gold tracking-[0.4em] text-xs uppercase mb-4 block font-sans">Reach Out</span>

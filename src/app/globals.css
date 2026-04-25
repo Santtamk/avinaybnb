@@ -61,3 +61,40 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+@keyframes reviewFlow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.reviews-desktop-track {
+  animation: reviewFlow 70s linear infinite;
+  will-change: transform;
+}
+
+.reviews-desktop-track:hover {
+  animation-play-state: paused;
+}
+
+.reviews-mobile-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(195, 163, 112, 0.5) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.reviews-mobile-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.reviews-mobile-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.reviews-mobile-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(195, 163, 112, 0.45);
+}
